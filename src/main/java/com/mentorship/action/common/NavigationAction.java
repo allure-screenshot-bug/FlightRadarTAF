@@ -1,8 +1,9 @@
 package com.mentorship.action.common;
 
 import com.codeborne.selenide.Selenide;
-import com.mentorship.page.widget.CookiesWidget;
 import com.google.inject.Inject;
+import com.mentorship.page.widget.CookiesWidget;
+import io.qameta.allure.Step;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +14,7 @@ public class NavigationAction {
     @Inject
     private CookiesWidget cookiesWidget;
 
+    @Step("Open Home page")
     public NavigationAction openHomePage() {
         LOG.info("Open Home page");
         Selenide.open("");

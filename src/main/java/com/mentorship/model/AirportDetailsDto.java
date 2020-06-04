@@ -11,6 +11,10 @@ public class AirportDetailsDto {
         this.code = code;
     }
 
+    public static Builder builder() {
+        return new Builder();
+    }
+
     public String getName() {
         return name;
     }
@@ -33,10 +37,6 @@ public class AirportDetailsDto {
                 .add("name", name)
                 .add("code", code)
                 .toString();
-    }
-
-    public static Builder builder() {
-        return new Builder();
     }
 
     public static class Builder {

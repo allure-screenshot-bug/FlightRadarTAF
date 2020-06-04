@@ -1,8 +1,8 @@
 package com.mentorship;
 
+import com.google.inject.Inject;
 import com.mentorship.action.common.NavigationAction;
 import com.mentorship.assertion.home.HomePageAssertion;
-import com.google.inject.Inject;
 import org.testng.annotations.Test;
 
 public class LoadSiteTest extends BaseTest {

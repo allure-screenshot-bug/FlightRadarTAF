@@ -1,10 +1,10 @@
 package com.mentorship;
 
+import com.google.inject.Inject;
 import com.mentorship.action.common.NavigationAction;
 import com.mentorship.action.common.SearchAction;
 import com.mentorship.assertion.airport.AirportDetailsAssertion;
 import com.mentorship.model.AirportDetailsDto;
-import com.google.inject.Inject;
 import org.testng.annotations.Test;
 
 public class AirportDetailsTest extends BaseTest {

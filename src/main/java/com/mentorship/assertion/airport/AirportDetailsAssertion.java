@@ -1,8 +1,8 @@
 package com.mentorship.assertion.airport;
 
+import com.google.inject.Inject;
 import com.mentorship.model.AirportDetailsDto;
 import com.mentorship.page.widget.AirportDetailsWidget;
-import com.google.inject.Inject;
 
 import static org.testng.Assert.*;
 

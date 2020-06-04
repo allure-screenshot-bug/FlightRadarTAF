@@ -1,7 +1,7 @@
 package com.mentorship.action.common;
 
-import com.mentorship.page.home.HomePage;
 import com.google.inject.Inject;
+import com.mentorship.page.home.HomePage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

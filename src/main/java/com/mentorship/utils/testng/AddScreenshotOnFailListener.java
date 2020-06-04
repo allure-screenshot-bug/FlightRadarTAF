@@ -1,15 +1,12 @@
 package com.mentorship.utils.testng;
 
 import com.codeborne.selenide.WebDriverRunner;
-import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-import java.io.ByteArrayInputStream;
-import java.util.UUID;
 
 public class AddScreenshotOnFailListener implements ITestListener {
 
@@ -28,9 +25,9 @@ public class AddScreenshotOnFailListener implements ITestListener {
         attachScreenshot();
     }
 
-    public void attachScreenshot() {
-        Allure.addAttachment(UUID.randomUUID().toString(),
-                new ByteArrayInputStream(((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES)));
+    @Attachment(value = "Screenshot", type = "image/png", fileExtension = ".png")
+    public byte[] attachScreenshot() {
+        return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
     @Override

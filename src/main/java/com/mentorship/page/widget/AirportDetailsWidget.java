@@ -7,11 +7,11 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class AirportDetailsWidget {
 
-    private SelenideElement airportWidgetWrapper = $(".airport-info-wrapper");
+    private final SelenideElement airportWidgetWrapper = $(".airport-info-wrapper");
 
-    private SelenideElement airportName = $("[data-component='airportInfo'] h2");
+    private final SelenideElement airportName = $("[data-component='airportInfo'] h2");
 
-    private SelenideElement airportCode = $("[data-component='airportInfo'] .code");
+    private final SelenideElement airportCode = $("[data-component='airportInfo'] .code");
 
     public boolean isAirportWidgetWrapperVisible() {
         return airportWidgetWrapper.isDisplayed();

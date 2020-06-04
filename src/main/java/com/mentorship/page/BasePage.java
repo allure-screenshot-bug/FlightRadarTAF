@@ -1,7 +1,7 @@
 package com.mentorship.page;
 
-import com.mentorship.page.widget.HeaderWidget;
 import com.google.inject.Inject;
+import com.mentorship.page.widget.HeaderWidget;
 
 public class BasePage {
 

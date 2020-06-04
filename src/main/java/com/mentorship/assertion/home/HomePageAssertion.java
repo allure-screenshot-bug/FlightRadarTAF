@@ -1,7 +1,7 @@
 package com.mentorship.assertion.home;
 
-import com.mentorship.page.home.HomePage;
 import com.google.inject.Inject;
+import com.mentorship.page.home.HomePage;
 
 import static org.testng.Assert.assertTrue;
 
